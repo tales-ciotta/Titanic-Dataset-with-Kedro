@@ -15,7 +15,7 @@ logs/**
 notebooks/
 
 # except their sub-folders
-!data/**/
+!data/01_raw
 !logs/**/
 
 
