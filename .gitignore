@@ -15,7 +15,9 @@ logs/**
 notebooks/
 
 # except their sub-folders
-!data/01_raw
+!data/01_raw/test.csv
+!data/01_raw/train.csv
+!data/01_raw/gender_submission.csv
 !logs/**/
 
 
