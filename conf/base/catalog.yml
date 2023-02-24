@@ -2,3 +2,78 @@
 #
 # Documentation for this file format can be found in "The Data Catalog"
 # Link: https://kedro.readthedocs.io/en/stable/data/data_catalog.html
+
+# Raw Train dataset
+df_train:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/train.csv
+
+# Raw Test dataset
+df_test:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/test.csv
+  
+# Clean Train dataset
+df_train_clean:
+  type: pandas.CSVDataSet
+  filepath: data/02_intermediate/train.csv
+
+# Clean Test dataset
+df_test_clean:
+  type: pandas.CSVDataSet
+  filepath: data/02_intermediate/test.csv
+
+# Train dataset after feature engineering
+df_train_enriched:
+  type: pandas.CSVDataSet
+  filepath: data/03_primary/train_enriched.csv
+
+# Test dataset after feature engineering
+df_test_enriched:
+  type: pandas.CSVDataSet
+  filepath: data/03_primary/test_enriched.csv
+  
+# Train dataset after encoding
+df_train_encoded:
+  type: pandas.CSVDataSet
+  filepath: data/04_feature/train_encoded.csv
+
+# Test dataset after encoding
+df_test_encoded:
+  type: pandas.CSVDataSet
+  filepath: data/04_feature/test_encoded.csv
+
+# Ordinal encoder
+oe_transformer: 
+  type: pickle.PickleDataSet
+  filepath: data/05_model_input/oe_transformer.pickle
+
+# Train dataset after scaling
+df_train_scaled:
+  type: pandas.CSVDataSet
+  filepath: data/05_model_input/train.csv
+
+# Test dataset after scaling
+df_test_scaled:
+  type: pandas.CSVDataSet
+  filepath: data/05_model_input/test.csv
+
+# Standard Scaler
+st_scaler: 
+  type: pickle.PickleDataSet
+  filepath: data/05_model_input/st_scaler.pickle
+
+# XGboost classification model
+classification_model: 
+  type: pickle.PickleDataSet
+  filepath: data/06_models/classification_model.pickle
+
+#Accuracy score of the model
+score:
+  type: text.TextDataSet
+  filepath: data/07_model_output/score.txt
+
+# File that saved the predictions of the model applied to the test.csv
+prediction:
+  type: pandas.CSVDataSet
+  filepath: data/07_model_output/prediction.csv
