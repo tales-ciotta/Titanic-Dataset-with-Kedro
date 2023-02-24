@@ -23,7 +23,6 @@ kedro run
 ```
 
 The final output, a txt file with the accuracy score of the model and the prediction.csv will be available in the folder 'data/07_model_output'.
-## Rules and guidelines
 
 ## How to test the project
 
