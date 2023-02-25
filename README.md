@@ -2,7 +2,7 @@
 
 ## Overview
 
-The objective of this project is to implement a machine learning pipeline with Kedro to predict to predict the survival of passengers using the  [Titanic dataset](https://www.kaggle.com/competitions/titanic/data) available on Kaggle.
+The objective of this project is to implement a machine learning pipeline with Kedro to predict to predict the survival of passengers using the  [Titanic dataset](https://www.kaggle.com/competitions/titanic/data) available for download on Kaggle but also provided in the data/01_raw folder of this repository.
 
 Take a look at the [Kedro documentation](https://kedro.readthedocs.io) to get started.
 
