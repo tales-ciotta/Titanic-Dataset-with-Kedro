@@ -8,8 +8,6 @@ Take a look at the [Kedro documentation](https://kedro.readthedocs.io) to get st
 
 ## How to install dependencies
 
-Declare any dependencies in `src/requirements.txt` for `pip` installation and `src/environment.yml` for `conda` installation.
-
 To install them, run:
 
 ```
